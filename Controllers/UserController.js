@@ -118,6 +118,11 @@ const userToken = async (req, res) => {
               },
             });
           }
+        } else {
+          res.send({
+            status: "error",
+            message: "Wrong Login Creditional",
+          });
         }
       });
     } else {
