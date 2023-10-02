@@ -70,7 +70,7 @@ const updateTodosData = async (req, res) => {
 };
 
 const deleteTodosData = async (req, res) => {
-  const { userId, _id } = req.body;
+  const { userId } = req.body;
   const { todoId } = req.params;
   try {
     const data = await todosModel.findOneAndDelete({
